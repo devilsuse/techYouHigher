@@ -110,19 +110,24 @@ public class TwoDimentionalArrayToMap
 
 
 	public static final HashMap<String, String> CODEBYREADFIELD = new HashMap<String, String>(){{
+		System.out.println("*********************");
         for (String[] mapping : FIELDCODEREADMAPPING){
+        	
+        	System.out.println(mapping[0] + " -> " + mapping[1]);
         	put(mapping[0],mapping[1]);
         }
 	}};
 
 	public static final HashMap<String, String> READFIELDBYCODE = new HashMap<String, String>(){{
+		System.out.println("*********************");
         for (String[] mapping : FIELDCODEREADMAPPING){
+        	System.out.println(mapping[1] + " -> " + mapping[0]);
         	put(mapping[1],mapping[0]);
         }
 	}};
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
+		System.out.println(READFIELDBYCODE);
 
 	}
 
